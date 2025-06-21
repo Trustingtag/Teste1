@@ -1,7 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using Teste1.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddControllers();
+string mySqlConnection = builder.Configuration.GetConnectionString("DefaultDataBase");
+builder.Services.AddDbContext<BancoContext>(opt =>
+{
+    opt.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection));
+});
 
 var app = builder.Build();
 
