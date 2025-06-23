@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\VsCode\\Teste1\\Teste1.csproj": {}
+    "C:\\VSCODE\\PROJETO_FINAL\\Teste1\\Teste1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\VsCode\\Teste1\\Teste1.csproj": {
+    "C:\\VSCODE\\PROJETO_FINAL\\Teste1\\Teste1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\VsCode\\Teste1\\Teste1.csproj",
+        "projectUniqueName": "C:\\VSCODE\\PROJETO_FINAL\\Teste1\\Teste1.csproj",
         "projectName": "Teste1",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\VsCode\\Teste1\\Teste1.csproj",
+        "projectPath": "C:\\VSCODE\\PROJETO_FINAL\\Teste1\\Teste1.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\VsCode\\Teste1\\obj\\",
+        "outputPath": "C:\\VSCODE\\PROJETO_FINAL\\Teste1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,17 +44,21 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[9.0.0-preview.1, )"
+              "version": "[8.0.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql.Design": {
               "target": "Package",

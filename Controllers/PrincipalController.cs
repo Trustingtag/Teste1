@@ -18,7 +18,7 @@ public class Principal : Controller
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult Editar()
     {
         return View();
     }
