@@ -23,6 +23,17 @@ public class Principal : Controller
         return View();
     }
 
+    public IActionResult Criar()
+    {
+        return View();
+    }
+
+    public IActionResult Excluir()
+    {
+        return View();
+    }
+
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

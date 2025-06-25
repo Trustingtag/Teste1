@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Pagina Principal";
 }
+
 <head>
 
     <meta charset="utf-8" />
@@ -9,9 +10,9 @@
     <link rel="stylesheet" href="~/css/index.css" />
 
     @section Scripts {
-    <script src="~/js/index.js"></script>
-}
-   
+        <script src="~/js/index.js"></script>
+    }
+
 </head>
 
 <body>
@@ -51,11 +52,17 @@
                     </a>
 
                     <ul class="submenu">
-                        <li><a href="/FGS - PROTOTIPO/CRIAR SOLICITACAO/criar.html">Criar Solicitação</a></li>
-                        <li><a href="/FGS - PROTOTIPO/COMPUTADORES/computadores.html">Gerenciar Solicitações</a></li>
+                        <li>
+                            <a asp-action="Criar" asp-controller="Principal" class="">
+                                Criar Solicitação
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-action="editar" asp-controller="Principal" class="">
+                                Editar Solicitações 
+                            </a>
+                        </li>
                     </ul>
-                </li>
-            </ul>
         </nav>
     </div>
     </section>

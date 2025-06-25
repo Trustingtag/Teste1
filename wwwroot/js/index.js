@@ -29,3 +29,14 @@ function toggleIcon(event) {
     }
 }
 
+function toggleSubmenu(button) {
+    const submenu = button.nextElementSibling;
+    if (submenu && submenu.classList.contains('submenu')) {
+        if (submenu.style.maxHeight) {
+            submenu.style.maxHeight = null;
+        } else {
+            submenu.style.maxHeight = submenu.scrollHeight + 'px';
+        }
+    }
+}
+
